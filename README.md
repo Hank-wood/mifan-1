@@ -19,8 +19,8 @@ Mifan::start();
 
 
 # 安装
-1, 下载Mifan框架并解压到您web目录下.
-2, 配置您的web服务器.
+1\. 下载Mifan框架并解压到您web目录下.
+2\. 配置您的web服务器.
 
 对于*Apache*, 编辑您的 `.htaccess` 文件, 加上类似如下配置:
 ```php
@@ -47,7 +47,7 @@ server {
 } 
 ```
 
-3, 创建一个 `index.php` 文件.
+3\. 创建一个 `index.php` 文件.
 
 首先, 引入Mifan框架.
 
