@@ -51,7 +51,7 @@ class Engine {
 
     public function map($name, $callback) {
         if (method_exists($this, $name)) {
-            throw new Exception("Cannot override an existing method.");
+            throw new \Exception("Cannot override an existing method.");
         }
         $this->dispatcher->set($name, $callback);
     }
@@ -59,7 +59,7 @@ class Engine {
     public function register($name, $class, array $params = array(),
         $callback = NULL) {
         if (method_exists($this, $name)) {
-            throw new Exception("Cannot override an existing method.");
+            throw new \Exception("Cannot override an existing method.");
         }
         $this->loader->register($name, $class, $params, $callback);
     }

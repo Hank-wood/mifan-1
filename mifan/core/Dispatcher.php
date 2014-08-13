@@ -21,7 +21,7 @@ class Dispatcher {
             return call_user_func_array($callback, $params);
         }
         else {
-            throw new Exception("Invalid callback specified.");
+            throw new \Exception("Invalid callback specified.");
         }
     }
 }
