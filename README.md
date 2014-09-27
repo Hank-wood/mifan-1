@@ -39,7 +39,7 @@ server {
     root $root;
 
     location / { 
-        try_files $uri $uri/ /index.php;
+        try_files $uri $uri/ /index.php?$query_string;
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_param SCRIPT_FILENAME $root/index.php;
         include fastcgi_params;
