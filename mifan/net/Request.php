@@ -38,7 +38,6 @@ class Request {
                 "query" => new Collection($_GET),
                 "data" => new Collection($_POST),
                 "cookie" => new Collection($_COOKIE),
-                "session" => isset($_SESSION) ? new Collection($_SESSION) : new Collection(),
                 "files" => new Collection($_FILES),
                 "secure" => self::getVar("HTTPS", "off") != "off",
                 "accept" => self::getVar("HTTP_ACCEPT"),
