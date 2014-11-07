@@ -1,3 +1,5 @@
+仿写[flightphp](http://flightphp.com/)
+
 # Mifan是什么?
 
 Mifan是一个快速, 简单, 可扩展的迷你PHP框架. 
